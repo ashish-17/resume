@@ -41,16 +41,16 @@
 
 %-----------------------------------------------------------
 %Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\resitem}[1]{\item #1 \vspace{2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}\vspace{6pt}}
 \newcommand{\ressubheading}[4]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & #2 \\
 		\textit{#3} & \textit{#4} \\
 \end{tabular*}\vspace{-6pt}}
 
 \newcommand{\ressubsubheading}[2]{
-\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 		\textit{#1} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
 %-----------------------------------------------------------
@@ -78,8 +78,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%
 \resheading{Education}
-	\begin{itemize}
-		\item
+%	\begin{itemize}
+%		\item[]
 			\ressubheading{\href{http://www.rutgers.edu/}{Rutgers University - New Brunswick}}{New Jersey, US}{\href{https://www.cs.rutgers.edu/}{MS in Computer Science}; \href{http://www.ashish-jindal.com/rutgers_unofficial_transcript.pdf}{GPA : 4.0}}{Aug, 2015 -- May, 2017}
 				{ \footnotesize
 				\begin{itemize}
@@ -87,10 +87,11 @@
 					\resitem{Key Courses: \href{https://www.cs.rutgers.edu/graduate/courses/512/}{Data Structures and Algorithms}, \href{https://www.cs.rutgers.edu/graduate/courses/518/}{Operating Systems Design}, \href{https://www.cs.rutgers.edu/graduate/courses/539/}{Database Systems Implementation}.}
 				\end{itemize}
 				}
-	\end{itemize}
-	
-	\begin{itemize}
-		\item
+%	\end{itemize}
+
+
+%	\begin{itemize}
+%		\item[]
 			\ressubheading{\href{http://www.nith.ac.in/}{National Institute of Technology - Hamirpur}}{Himachal Pradesh, India}{\href{http://www.nith.ac.in/ece/}{B.Tech. in Electronics and Communication Engineering}; \href{http://www.ashish-jindal.com/nith_unofficial_transcript.pdf}{CGPI : 7.83}}{Aug, 2008 -- May, 2012}
 				{ \footnotesize
 				\begin{itemize}
@@ -99,38 +100,23 @@
 					
 				\end{itemize}
 				}
-	\end{itemize} % End Education list
+%	\end{itemize} % End Education list
 
 %%%%%%%%%%%%%%%%%%%%%%
 \resheading{Work Experience}
-	\begin{itemize}
-		\item 
-			\ressubheading{\href{http://www.nagarro.com/}{Software Engineer, Nagarro}}{Jul, 2012 -- Jul, 2015}
-				{Quicken: Windows based personal finance management application.}{}
+%	\begin{itemize}
+%		\item[]
+			\ressubheading{\href{http://www.nagarro.com/}{Nagarro Inc}}{Jul, 2012 -- Jul, 2015}
+				{Software Engineer}{}
 				{ \footnotesize
 				\begin{itemize}
-					\resitem{Revamped a custom WIN32 control -- Quickfill and improved it's service via caching and asynchronous data loading.}
-					\resitem{Redesigned application controls by writing C++ wrappers over WIN32 implementation; to help facilitate easier debugging and extensibility.}
+					\resitem{Worked on a Java based supply chain management system for a leading European airline company. Upgraded data export services  of the application using Apache poi-SXSSF to facilitate  low-memory footprint  data export.}
+					\resitem{Worked on a WIN32 based desktop application, where my work involved revamping custom WIN32 controls and improving their service via caching, asynchronous data loading etc.}
+					\resitem{Member of New Technology Exploration Group (NTEG); Implemented several PoC projects to showcase HTML5 features - Canvas, Local Storage, Drag and Drop, Application Cache etc.}
+					\resitem{Involved in new engineers hiring and training process.}
 				\end{itemize}
-				}
-
-			\ressubsubheading{Unified Fleet Distribution system: Windows based fleet management application.}{}
-				{ \footnotesize
-				\begin{itemize}
-					\resitem{Ported the server side C++ code from x-86 to x-64.}
-					\resitem{Implemented an application to automate server log analysis and report generation.}
-					
-				\end{itemize}
-				}
-
-			\ressubsubheading{Ldrive: Java based Web application for a supply chain management system.}{}
-				{ \footnotesize
-				\begin{itemize}
-					\resitem{Implemented data export services in the web-application using Apache poi.}
-					\resitem{Provided L3 and L4 support service to the client.}
-				\end{itemize}
-				}				
-	\end{itemize}  % End Experience list
+				}			
+%	\end{itemize}  % End Experience list
 
 \resheading{\href{http://www.ashish-jindal.com/}{Projects}}
 
